@@ -7,7 +7,10 @@ public class EnemySpawner : MonoBehaviour
     // —N‚­“G
     [SerializeField] GameObject[] _enemies;
     // “G‚ª—N‚­üŠú
-    [SerializeField] float _distance;
+    [SerializeField] float _minDistance;
+    [SerializeField] float _maxDistance;
+    // ƒ^[ƒQƒbƒg
+    [SerializeField] Transform target;
 
     IEnumerator _spawn;
 
@@ -32,7 +35,8 @@ public class EnemySpawner : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSecondsRealtime(_distance);
+            float distance = Random.Range(_minDistance, _maxDistance + 1);
+            yield return new WaitForSecondsRealtime(distance);
             int r = Random.Range(0, _enemies.Length);
             Instantiate(_enemies[r], transform.position, Quaternion.identity);
         }
