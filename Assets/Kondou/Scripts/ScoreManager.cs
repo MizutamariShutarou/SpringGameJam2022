@@ -18,9 +18,7 @@ public class ScoreManager : MonoBehaviour
     [Header("ハイスコアUI")] Text _highScoreText;
 
     [SerializeField]
-    [Header("カンストスコア")] int _maxScore = 99999;
-
-    [Header("増やすスコア")] int _getScore; 
+    [Header("カンストスコア")] int _maxScore = 99999; 
      
     private void Start()
     {
@@ -43,9 +41,9 @@ public class ScoreManager : MonoBehaviour
             _highScoreText.text = _highScore.ToString();
         }
     }
-    public int GetScore(int _getScore)
+    public int GetScore(int getScore)
     {
-        _score += _getScore;
+        _score += getScore;
         return _score;
     }
 }
