@@ -43,10 +43,10 @@ public class ScoreManager : MonoBehaviour
             _highScoreText.text = _highScore.ToString();
         }
     }
-    int GetScore()
+    public int GetScore(int _getScore)
     {
         _score += _getScore;
-        return _getScore;
+        return _score;
     }
 }
 
