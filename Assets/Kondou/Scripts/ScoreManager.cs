@@ -17,12 +17,19 @@ public class ScoreManager : MonoBehaviour
     [SerializeField]
     [Header("ハイスコアUI")] Text _highScoreText;
 
+    [SerializeField]
+    [Header("カンストスコア")] int _maxScore = 99999;
+     
     private void Start()
     {
         _highScoreText.text = _highScore.ToString();
     }
     private void Update()
     {
+        if(_score > _maxScore)
+        {
+            _score = _maxScore;
+        }
         _scoreText.text = _score.ToString();
         HighScore();
     }
