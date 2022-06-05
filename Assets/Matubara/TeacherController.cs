@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyTimer : MonoBehaviour
+public class TeacherController : MonoBehaviour
 {
     [SerializeField] float m_lifeTime = 5f;
+    [SerializeField] Transform _target;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,6 @@ public class DestroyTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.up = transform.position - _target.position;
     }
 }
