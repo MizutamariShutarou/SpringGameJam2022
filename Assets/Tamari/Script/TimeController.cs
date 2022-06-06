@@ -10,8 +10,13 @@ public class TimeController : MonoBehaviour
     [SerializeField] Text _timeText;
     [SerializeField] GameObject _gameOverPanel;
     [SerializeField] List<GameObject> _gameObjectList;
-
-    //bool _isGameOver;
+    public bool _isGameOver;
+    public static TimeController Instance { get; private set; } = default;
+    private void Awake()
+    {
+        Instance = this;
+    }
+    
     void Update()
     {
         _countTime -= Time.deltaTime;
@@ -20,8 +25,10 @@ public class TimeController : MonoBehaviour
 
         if(_countTime <= 0)
         {
+            _isGameOver = true;
+            Debug.Log(_isGameOver);
             _gameObjectList.ForEach(e => e.SetActive(false));
-            _timeText.text = "Ç®ë|èúäÆóπÅI";
+            _timeText.text = "Ç®ë|èúäÆóπ";
             _gameOverPanel.SetActive(true);
         }
     }

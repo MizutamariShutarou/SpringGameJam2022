@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Tamari/Title.unity
+    guid: 84a292b5aa65a494dbb4e805b38deb03
+  - enabled: 1
+    path: Assets/Tamari/Explanation.unity
+    guid: 28770e8fc70725546921439946dda9a3
   m_configObjects: {}

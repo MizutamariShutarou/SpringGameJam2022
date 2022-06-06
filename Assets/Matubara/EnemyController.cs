@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+
     [SerializeField]float _speed;
     [SerializeField] Transform _tgpos;
     Rigidbody2D _rb;
@@ -12,6 +13,13 @@ public class EnemyController : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
     }
+    private void Update()
+    {
+        if (TimeController.Instance._isGameOver)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     // Update is called once per frame
     void FixedUpdate()
@@ -19,4 +27,14 @@ public class EnemyController : MonoBehaviour
         Vector2 move = _tgpos.position - transform.position;
         _rb.velocity = move.normalized * _speed;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Center"))
+        {
+            Debug.Log("a");
+            Destroy(gameObject);
+        }
+    }
+
 }
