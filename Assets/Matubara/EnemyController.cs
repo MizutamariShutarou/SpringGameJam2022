@@ -19,4 +19,12 @@ public class EnemyController : MonoBehaviour
         Vector2 move = _tgpos.position - transform.position;
         _rb.velocity = move.normalized * _speed;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Center"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
