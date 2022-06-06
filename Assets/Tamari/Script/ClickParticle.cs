@@ -22,6 +22,7 @@ public class ClickParticle : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            SoundManager._soundManager.Play("Click");
             mousePosition = Input.mousePosition;
             Instantiate(_pS, Camera.main.ScreenToWorldPoint(mousePosition), Quaternion.identity);
             _obj.SetActive(true);

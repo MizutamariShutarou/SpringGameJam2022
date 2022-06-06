@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    static public SoundManager _sM;
+    static public SoundManager _soundManager;
 
     [System.Serializable]
     public class SoundData
@@ -27,12 +27,9 @@ public class SoundManager : MonoBehaviour
 
     void Awake()
     {
-        if (_sM == null)
-        {
-            _sM = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else Destroy(gameObject);
+        _soundManager = this;
+        DontDestroyOnLoad(gameObject);
+        
 
         for (int i = 0; i < _audioSources.Length; ++i)
             _audioSources[i] = gameObject.AddComponent<AudioSource>();
