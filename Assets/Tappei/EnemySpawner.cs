@@ -11,6 +11,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] float _maxDistance;
     // ターゲット
     [SerializeField] Transform target;
+    [SerializeField]
 
     IEnumerator _spawn;
 

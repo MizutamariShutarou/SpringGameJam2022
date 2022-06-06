@@ -23,6 +23,11 @@ public class Player : MonoBehaviour
         _diff = mousePos - transform.position;
         _diff = new Vector3(_diff.x, _diff.y,0);
 
+        if(Input.GetMouseButton(0))
+        {
+            transform.Rotate(Vector3.forward * -_rotationSpeed);
+        }
+
         if (Input.GetMouseButton(1))
         {
             transform.Rotate(Vector3.forward * _rotationSpeed);

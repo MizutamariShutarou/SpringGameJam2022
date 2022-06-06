@@ -7,10 +7,12 @@ using UnityEngine.SceneManagement;
 public class TimeController : MonoBehaviour
 {
     [Header("êßå¿éûä‘"), SerializeField] float _countTime;
+    [SerializeField] float _lastTime;
     [SerializeField] Text _timeText;
     [SerializeField] GameObject _gameOverPanel;
     [SerializeField] List<GameObject> _gameObjectList;
     public bool _isGameOver;
+    public bool _isLast;
     public static TimeController Instance { get; private set; } = default;
     private void Awake()
     {
@@ -22,6 +24,10 @@ public class TimeController : MonoBehaviour
         _countTime -= Time.deltaTime;
 
         _timeText.text = "écÇË" + _countTime.ToString("f1");
+        if(_countTime <= _lastTime)
+        {
+            _isLast = true;
+        }
 
         if(_countTime <= 0)
         {
