@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GoGameScene : MonoBehaviour
+public class GoExplanation : MonoBehaviour
 {
     public void ChangeScene()
     {
-        SceneManager.LoadScene("Scenes/Tamari");
+        SceneManager.LoadScene("Scenes/Explanation");
     }
 }

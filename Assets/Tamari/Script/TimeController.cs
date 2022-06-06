@@ -21,7 +21,7 @@ public class TimeController : MonoBehaviour
         if(_countTime <= 0)
         {
             _gameObjectList.ForEach(e => e.SetActive(false));
-            _timeText.text = "‚¨‘|œŠ®—¹I";
+            _timeText.text = "‚¨‘|œŠ®—¹";
             _gameOverPanel.SetActive(true);
         }
     }
