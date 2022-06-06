@@ -186,7 +186,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 17.72335, y: 11.987716}
+  m_Size: {x: 20.541283, y: 12.389233}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -200,7 +200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75329671}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0368, y: -0.3289, z: 0}
+  m_LocalPosition: {x: 0.3, y: -1.11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 150
-    m_FontStyle: 1
+    m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 200
@@ -294,7 +294,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Cleaning ClassRoom
+  m_Text: "~\u96D1\u5DFE\u99C6\u3051\uFF5E"
 --- !u!222 &141749132
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -550,6 +550,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727259099}
   m_CullTransparentMesh: 1
+--- !u!1 &1010403818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1010403820}
+  - component: {fileID: 1010403819}
+  m_Layer: 0
+  m_Name: ClickParticle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1010403819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010403818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f056d4daa67a874fa44f3cee8400cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pS: {fileID: 1744716122746794419, guid: da3f9636286d7ff4e896c266395722d0, type: 3}
+--- !u!4 &1010403820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010403818}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1767780580
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,6 +751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c3b2e7ec0a2a504c8fbfd431df86bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sceneName: Main
 --- !u!114 &1811336933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -982,7 +1028,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1993300381}
-        m_TargetAssemblyTypeName: GoExplanation, Assembly-CSharp
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
         m_MethodName: ChangeScene
         m_Mode: 1
         m_Arguments:
@@ -1040,6 +1086,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1993300376}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 331dc7e679d52544d9e479186ac9ded3, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c3b2e7ec0a2a504c8fbfd431df86bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sceneName: Explanation
