@@ -1152,7 +1152,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1215932539216465791, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 192.9607
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 1215932539216465791, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1160,15 +1160,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1215932539216465791, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 96.48035
+      value: 480
       objectReference: {fileID: 0}
     - target: {fileID: 1215932539216465791, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -36.923
       objectReference: {fileID: 0}
+    - target: {fileID: 3295163405128970264, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -257.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 3295163405128970264, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -89
+      objectReference: {fileID: 0}
     - target: {fileID: 3423425441447274744, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 134.8286
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 3423425441447274744, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1176,7 +1184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3423425441447274744, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -732.5857
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 3423425441447274744, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1185,6 +1193,10 @@ PrefabInstance:
     - target: {fileID: 3423425441581875792, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
       propertyPath: m_Name
       value: Canvas1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423425441581875792, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3423425441581875796, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
       propertyPath: m_Pivot.x
@@ -1284,7 +1296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3423425442234203653, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3423425442284319012, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1320,7 +1332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7893113496034984924, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
       propertyPath: _countTime
-      value: 30
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7893113496034984924, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
       propertyPath: _gameObjectList.Array.size
@@ -1346,6 +1358,14 @@ PrefabInstance:
       propertyPath: _gameObjectList.Array.data[4]
       value: 
       objectReference: {fileID: 1241968150407225239, guid: 9bef9742878cf0b48a4f9561142e3081, type: 3}
+    - target: {fileID: 8232540908167667776, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -337.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 8232540908167667776, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -92
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73d53ef57ea5b53499716c85ce3f20b4, type: 3}
 --- !u!114 &1697758144 stripped
