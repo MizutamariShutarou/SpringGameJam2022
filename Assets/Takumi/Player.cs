@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         _diff = mousePos - transform.position;
-        _diff = new Vector3(_diff.x, _diff.y,0);
+        _diff = new Vector2(_diff.x, _diff.y);
 
         if(Input.GetMouseButton(0))
         {
