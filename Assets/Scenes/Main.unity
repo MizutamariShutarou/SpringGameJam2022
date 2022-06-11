@@ -374,7 +374,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.00000010214215}
@@ -1133,33 +1133,33 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1238942670}
+  m_GameObject: {fileID: 1238942671}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d2840edcd9ae834894aaccd491f6ef8, type: 3}
+  m_Script: {fileID: 11500000, guid: fd62013ef38a92c46b219f5fc03e1a9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _waterScore: 100
   _garbageScore: 200
-  _teacherScore: -300
+  _teacherScore: -400
   _sm: {fileID: 1149574744}
---- !u!114 &1238942675
+--- !u!114 &1238942681
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1238942671}
+  m_GameObject: {fileID: 1238942670}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d2840edcd9ae834894aaccd491f6ef8, type: 3}
+  m_Script: {fileID: 11500000, guid: fd62013ef38a92c46b219f5fc03e1a9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _waterScore: 100
   _garbageScore: 200
-  _teacherScore: -300
+  _teacherScore: -400
   _sm: {fileID: 1149574744}
---- !u!114 &1238942676
+--- !u!114 &1238942684
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1168,28 +1168,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1238942672}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d2840edcd9ae834894aaccd491f6ef8, type: 3}
+  m_Script: {fileID: 11500000, guid: fd62013ef38a92c46b219f5fc03e1a9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _waterScore: 100
   _garbageScore: 200
-  _teacherScore: -300
-  _sm: {fileID: 1149574744}
---- !u!114 &1238942677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1238942673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d2840edcd9ae834894aaccd491f6ef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _waterScore: 100
-  _garbageScore: 200
-  _teacherScore: -300
+  _teacherScore: -400
   _sm: {fileID: 1149574744}
 --- !u!1 &1383408685 stripped
 GameObject:
@@ -1257,6 +1241,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1674268283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238942673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd62013ef38a92c46b219f5fc03e1a9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _waterScore: 100
+  _garbageScore: 200
+  _teacherScore: -400
+  _sm: {fileID: 1149574744}
 --- !u!1001 &1697758143
 PrefabInstance:
   m_ObjectHideFlags: 0

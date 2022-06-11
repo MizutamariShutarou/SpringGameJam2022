@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GetScore : MonoBehaviour
+public class WallGetScore : MonoBehaviour
 {
 
     [SerializeField] int _waterScore;
     [SerializeField] int _garbageScore;
     [SerializeField] int _teacherScore;
     [SerializeField] ScoreManager _sm;
-    
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Water"))
         {
@@ -24,6 +23,5 @@ public class GetScore : MonoBehaviour
         {
             _sm.GetScore(_teacherScore);
         }
-
     }
 }

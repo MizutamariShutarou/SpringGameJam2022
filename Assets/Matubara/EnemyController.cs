@@ -30,9 +30,16 @@ public class EnemyController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Center"))
+        if (collision.gameObject.CompareTag("Wall"))
         {
             Debug.Log("a");
+            Destroy(gameObject);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Center"))
+        {
             Destroy(gameObject);
         }
     }
